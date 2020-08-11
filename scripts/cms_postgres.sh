@@ -171,7 +171,7 @@ sed -e "s/\(server_host=\).*/\1${cm_fqdn}/" -i /etc/cloudera-scm-agent/config.in
 chown -R cloudera-scm:cloudera-scm /var/lib/cloudera-scm-agent/
 systemctl start cloudera-scm-agent
 install_postgres(){
-yum install postgreql-server -y
+yum install postgresql-server -y
 EXECNAME="Postgresql Bootstrap"
 CURRENT_VERSION_MARKER='OCI_1'
 SLEEP_INTERVAL=5
